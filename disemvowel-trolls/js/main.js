@@ -14,13 +14,14 @@ function disemvowel(str) {
 	// This for loop checks the current arguemnt item for a vowel and if none is detected it pushes the item into the noVowel array
 	for (i = 0; i < str.length; i++) {
 		if (str[i].toLowerCase().includes("i") !== true && str[i].toLowerCase().includes("o") !== true && str[i].toLowerCase().includes("u") !== true && str[i].toLowerCase().includes("a") !== true && str[i].toLowerCase().includes("e") !== true ) {
-			noVowels.push(str[i])
+			// noVowels.push(str[i])
+			newStr += str[i];
 		}
 	}
 	// This for loop concatenates the noVowels array into a new string
-	for (i = 0; i < noVowels.length; i++) {
-		newStr += noVowels[i];
-	}
+	// for (i = 0; i < noVowels.length; i++) {
+	// 	newStr += noVowels[i];
+	// }
 	return newStr;
 }
 
